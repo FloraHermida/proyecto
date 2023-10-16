@@ -7,27 +7,95 @@
 	</head>	
 	
 <body>
+	
 	<header>
+		<a href="nombre" class="nombre">FLORA</a>
 		<nav class="botonera">
 			<ul class="itemsdebotonera">
-				<li><a href="#sobremi" target="_self">Sobre m&iacute;</a></li>
-				<li><a href="#educacion" target="_self">Educacio&oacute;n</a></li>
-				<li><a href="#recorrido" target="_self">Mi recorrido</a></li>
+				<li><a href="#acercademi" target="_self">Historia</a></li>
+				<li><a href="#educacion" target="_self">Educaci&oacute;n</a></li>
+				<li><a href="#mirecorrido" target="_self">Recorrido</a></li>
+				<li><a href="#experiencia" target="_self">Experiencia</a></li>
 			</ul>
 		</nav>
-		<div class="container">
-			
-		</div>
+		<script type="text/javascript">
+			window.addEventListener("scroll",function(){
+				var header = document.querySelector("header");
+				header.classList.toggle("abajo",window.scrollY>0);
+			})
+		</script>
+		
 	</header>
+	
 		<main>
-			<section>
-				<article>
+			<section class="info-botonera">
+				<article class="historia" id="historia">
+					<h3>Mi Historia</h3>
+					<p>Me llamo Florencia pero me gusta que me digan Flora, tengo 23 a&ntilde;os y soy estudiante de la UNLa en la carrera de Dise&ntilde;o y Comunicaci&oacute;n visual, disfruto del proceso de aprendizaje y suelo aprender mucho de los errores del mismo. Soy una apasionada de aprender siempre algo nuevo y de escuchar experiencias. 
+					Mis hobbies son: bailar, el gym y pasar tiempo con mis amgias.</p>
 				</article>
+				
+				<article class="educacion" id="educacion">
+					<h3>Educaci&oacute;n:</h3>
+					<ul>
+						<li>Secundario: Bachiller en Comunicaci&oacute;n Social</li>
+						<li>Universitario: Diseño y comunicaci&oacute;n visual (en curso)</li>
+						<li>Oxford:Lengua Inglesa</li>
+					</ul>
+				</article>
+				
+				<article class="mirecorrido" id="mirecorrido"> 
+					<h3>Recorrido</h3>
+					<ul>
+						<li>Dise&ntilde;adora en Indumentaria (01.04.2023 - actualmente)</li>
+						<li>Freelance(2021-actualidad)</li>
+					</ul>
+					<p>A lo largo de mi trayectria pase por muchos rubros, como por ejemplo: gatronom&iacute;a, recepcionista, etc. Pero actualmente trabajo como freelancer, decicandole ya casi 3 a&ntilde;os, realizando trabajos de impresi&oacute;n y dise&ntilde;os digitales.Manejandome de manera independiente y afortunadamente aprendiendo de mis errores.
+					Hace no mas de 3 meses comenc&eacute;mi emprendimiento de prendas estampadas, al comienzo no cre&iacute;a que iba a tener mucho &eacute;xito, pero por suerte el boca a boca es mi mejor publicidad.
+					Instagram tambi&en se ha convertido en una red social muy fundamental para m&iacute;, gracias a ese medio puedo compartir muchos de mis trabajos con la gente y me da mayor visibilidad.
+					Soy muy apacionada con lo que hago y trato de dedicarle mi 100% para logar sustentarme &uacute;nicamente con el fruto de mi trabajo, aunque a veces me llegue a mi limite realmente lo disfruto mucho.
+					Actualmente tambi&eacute;n soy diseñadora en la empresa Crearte, ubicada en Lomas de Zamora, en donde estoy ubicada en el sector de diseño, encargada de realizar &uacute;nicamente los dise&ntilde;os que llevaran bordados o estampados cada prenda. 
+					Tambi&en formo parte de Th.Ar.Marketing una agencia de marketing digital. Trabajando en equipo con otros cerebros. 
+					Cada uno cumple un rol fundamental para el paquete de marketing que suele abonar el cliente.
+
+
+					Espero que les haya entretenido mi relato, a continuaci&oacute;n les dejo algunas im&aacute;genes de trabajos realizados.
+					</p>
+				</article>
+				
+					<article class="experiencia" id="experiencia">
+					<h3>Mi experiencia</h3>
+					<p>Me llamo Florencia pero me gusta que me digan Flora, tengo 23 a&ntilde;os y soy estudiante de la UNLa en la carrera de Dise&ntilde;o y Comunicaci&oacute;n visual, disfruto del proceso de aprendizaje y suelo aprender mucho de los errores del mismo. Soy una apasionada de aprender siempre algo nuevo y de escuchar experiencias. 
+					Mis hobbies son: bailar, el gym y pasar tiempo con mis amgias.</p>
+				</article>
+	
 			</section>
+	
 			<aside>
+				<article class="herramientas" id="herramientas">
+					<h3>Herramientas de trabajo</h3>
+						<ul>
+							<li>Iustrator</li>
+							<li>Photoshop</li>
+							<li>Indesign</li>
+							<li>Ligthroom</li>
+						</ul>
+				</article>
 			</aside>
-		</main>				
+				
+						
+		</main>	
+	
 	<footer>
+		<p>Gracias por llegar hasta aqu&iacute;, te dejo mis redes para que puedas contactarme.</p>
+		<div class="redes-sociales">
+			<a href="https://www.instagram.com/gota_flora/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">
+				<img src="imagenes/instagram.png" width="45" height="45" alt="icono-instagram" id="foto-insagram">
+			</a>
+			<a href="https://www.behance.net/gallery/171148687/Mi-portfolio" target="_blank">
+				<img src="imagenes/behance.png" width="45" height="45" alt="icono-behance" id="foto-behance">
+			</a>
+		</div>
 	</footer>
 	
 </body>
