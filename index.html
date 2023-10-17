@@ -4,99 +4,170 @@
 		<meta charset="utf-8">
 		<title>Flora Hermida</title>
 		<link href="estilos.css" rel="stylesheet" type="text/css">
+		<style>
+		  @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Source+Code+Pro:wght@500&display=swap');
+		</style>
 	</head>	
-	
+
 <body>
-	
-	<header>
-		<a href="nombre" class="nombre">FLORA</a>
-		<nav class="botonera">
-			<ul class="itemsdebotonera">
-				<li><a href="#acercademi" target="_self">Historia</a></li>
-				<li><a href="#educacion" target="_self">Educaci&oacute;n</a></li>
-				<li><a href="#mirecorrido" target="_self">Recorrido</a></li>
-				<li><a href="#experiencia" target="_self">Experiencia</a></li>
-			</ul>
-		</nav>
-		<script type="text/javascript">
-			window.addEventListener("scroll",function(){
-				var header = document.querySelector("header");
-				header.classList.toggle("abajo",window.scrollY>0);
-			})
-		</script>
+	  <header>
+	    <nav>
+			  <h1>Flora Hermida</h1>
+			  <ul class="navegacion">
+				<li><a href="#sobremi" class="nav-link">Acerca de Mí</a></li>
+				<li><a href="#habilidaes" class="nav-link">Habilidades</a></li>
+				<li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+				<li><a href="#proyectos" class="nav-link">Contacto</a></li>
+			  </ul>
+			  <button class="menu-flora" id="menu-flor">
+				<ion-icon class="barras" name="menu-outline"></ion-icon>
+			  </button>
+		   </nav>
+	  </header>
 		
-	</header>
+	<main>
 	
-		<main>
-			<section class="info-botonera">
-				<article class="historia" id="historia">
-					<h3>Mi Historia</h3>
-					<p>Me llamo Florencia pero me gusta que me digan Flora, tengo 23 a&ntilde;os y soy estudiante de la UNLa en la carrera de Dise&ntilde;o y Comunicaci&oacute;n visual, disfruto del proceso de aprendizaje y suelo aprender mucho de los errores del mismo. Soy una apasionada de aprender siempre algo nuevo y de escuchar experiencias. 
-					Mis hobbies son: bailar, el gym y pasar tiempo con mis amgias.</p>
-				</article>
-				
-				<article class="educacion" id="educacion">
-					<h3>Educaci&oacute;n:</h3>
-					<ul>
-						<li>Secundario: Bachiller en Comunicaci&oacute;n Social</li>
-						<li>Universitario: Diseño y comunicaci&oacute;n visual (en curso)</li>
-						<li>Oxford:Lengua Inglesa</li>
-					</ul>
-				</article>
-				
-				<article class="mirecorrido" id="mirecorrido"> 
-					<h3>Recorrido</h3>
-					<ul>
-						<li>Dise&ntilde;adora en Indumentaria (01.04.2023 - actualmente)</li>
-						<li>Freelance(2021-actualidad)</li>
-					</ul>
-					<p>A lo largo de mi trayectria pase por muchos rubros, como por ejemplo: gatronom&iacute;a, recepcionista, etc. Pero actualmente trabajo como freelancer, decicandole ya casi 3 a&ntilde;os, realizando trabajos de impresi&oacute;n y dise&ntilde;os digitales.Manejandome de manera independiente y afortunadamente aprendiendo de mis errores.
-					Hace no mas de 3 meses comenc&eacute;mi emprendimiento de prendas estampadas, al comienzo no cre&iacute;a que iba a tener mucho &eacute;xito, pero por suerte el boca a boca es mi mejor publicidad.
-					Instagram tambi&en se ha convertido en una red social muy fundamental para m&iacute;, gracias a ese medio puedo compartir muchos de mis trabajos con la gente y me da mayor visibilidad.
-					Soy muy apacionada con lo que hago y trato de dedicarle mi 100% para logar sustentarme &uacute;nicamente con el fruto de mi trabajo, aunque a veces me llegue a mi limite realmente lo disfruto mucho.
-					Actualmente tambi&eacute;n soy diseñadora en la empresa Crearte, ubicada en Lomas de Zamora, en donde estoy ubicada en el sector de diseño, encargada de realizar &uacute;nicamente los dise&ntilde;os que llevaran bordados o estampados cada prenda. 
-					Tambi&en formo parte de Th.Ar.Marketing una agencia de marketing digital. Trabajando en equipo con otros cerebros. 
-					Cada uno cumple un rol fundamental para el paquete de marketing que suele abonar el cliente.
-
-
-					Espero que les haya entretenido mi relato, a continuaci&oacute;n les dejo algunas im&aacute;genes de trabajos realizados.
+		<section class="flora" id="about">
+			  <img src="imagenes/fotoperfil.jpg" alt="flora-hermida" loading="lazy" class="flora-img">
+				  <div class="bio">
+					<h2 class="bio-titulo">Sobre M&iacute;</h2>
+					<p class="bio-texto">
+					  Me llamo Florencia pero me gusta que me digan Flora, tengo 23 a&ntilde;os y soy estudiante de la UNLa en la carrera de Dise&ntilde;o y Comunicaci&oacute;n visual, disfruto del proceso de aprendizaje y suelo aprender mucho de los errores del mismo. Soy una apasionada de aprender siempre algo nuevo y de escuchar experiencias. 
 					</p>
-				</article>
-				
-					<article class="experiencia" id="experiencia">
-					<h3>Mi experiencia</h3>
-					<p>Me llamo Florencia pero me gusta que me digan Flora, tengo 23 a&ntilde;os y soy estudiante de la UNLa en la carrera de Dise&ntilde;o y Comunicaci&oacute;n visual, disfruto del proceso de aprendizaje y suelo aprender mucho de los errores del mismo. Soy una apasionada de aprender siempre algo nuevo y de escuchar experiencias. 
-					Mis hobbies son: bailar, el gym y pasar tiempo con mis amgias.</p>
-				</article>
-	
+					<div class="mishobbies" id="hobbie">
+						<h3 class="tiempolibre">Hobbies:</h3>
+						<p>Mi tiempo libre se basa en:</p>
+					   <img src="imagenes/arte.png" alt="icono-arte" class="mishobbies" width="36px" height="36px">
+					   <img src="imagenes/camara.png" alt="icono-camara" class="mishobbies" width="42px" heigth="30px">
+					   <img src="imagenes/gym.png" alt="icono-gym" class="mishobbies" width="40px" height="50px">
+					</div>
+					<section class="mas-sobre">
+						  <h3>Más sobre mí</h3>
+						  <p> +54 9 1158749019 </p>
+						  <p>09 de mayo del a&ntilde;o 2.000.</p>
+						  <p>@florenciahermida@gmail.com</p>
+					</section>
+				 </div>
+		 </section>
+
+		 
+
+	  <section class="habilidades" id="habilidades">
+		    <h2 class="header-habilidadr">Herramientas de trabajo&nbsp;</h2>
+
+		    <div class="contenedor-habilidades">
+			  <div class="lashabilidades">
+				  <img src="imagenes/photoshop.png" alt="img-photoshop" loading="lazy" class="icon icon-card" width="60px"  height="60px">
+				  <img src="imagenes/ilustrator.png" alt="img-ilustrator" loading="lazy" class="tarjeta-icono" width="60px" height="60px">
+				  <img src="imagenes/indesign.png" alt="img-indesign" loading="lazy" class="tarjeta-icono" width="60px" height="60px">
+			  </div>
+		    </div>	
+	  </section>
+		
+	  <section class="proyectos" id="proyectos">
+		  <h2 class="titulo-de-proyectos">Algunos de mis proyectos recientes</h2>
+		  <div class="contenedor-de-proyectos">
+				<div class="contenedor-de-proyectos-tarjeta-de-proyectos">
+				<img src="imagenes/img1.png" alt="trabajo-libro1" loading="lazy" class="project-pic" width="280px" height="210px">
+				  <h3 class="contenedor-titulo-de-proyectos">Editorial</h3>
+				  <p class="detalles-de-proyectos">
+					  Re-edici&oacute;n editorial de un cuento infantil.
+				  </p>
+				  <p>
+					 A&ntilde;o: 2021
+				  </p>
+				  <a href="https://www.instagram.com/p/CjBOzD_OPQM/?img_index=1" target="_blank" class="enlace-de-proyecto">Miralo aqu&iacute;</a>
+				</div>
+			  
+				<div class="contenedor-de-proyectos-tarjeta-de-proyectos ">
+					 <img src="imagenes/img4.jpg" alt="diseño-lata" loading="lazy" class="project-pic" width="310px" height="210px">
+					  <h3 class="titulo-proyecto">Dise&ntilde;o</h3>
+					  <p class="detalles-de-proyectos">
+						Dise&ntilde;o a una bebida energet&iacute;ca.
+					  </p>
+					  <p>
+						 A&ntilde;o: 2022
+					  </p>
+					  <a href="https://www.instagram.com/p/CodolIesrET/?img_index=1" target="_blank" class="project-link">Miralo aqu&iacute;</a>
+				</div>
+			  
+				<div class="contenedor-de-proyectos-tarjeta-de-proyectos ">
+					 <img src="imagenes/img6.jpeg" alt="diseño-marca" loading="lazy" class="project-pic" width="310px" height="210px">
+					  <h3 class="titulo-proyecto">Redes</h3>
+					  <p class="detalles-de-proyectos">
+						Dise&ntilde;o paraa feed de Instagram.
+					  </p>
+					  <p>
+						 A&ntilde;o: 2023
+					  </p>
+					  <a href="https://www.instagram.com/p/CmFNEMlOOMH/?img_index=1" target="_blank" class="project-link">Miralo aqu&iacute;</a>
+				</div>
+		  </div>
+       </section>
+		
+		<section id="miniaturas">
+			<a href="#foto-1"><img src="imagenes/img7.jpg" width="200px" height="200px" alt="ballena"></a>
+			<a href="#foto-2"><img src="imagenes/foto2.jpg" width="200px" height="200px" alt="yumi"></a>
+			<a href="#foto-3"><img src="imagenes/libro1.jpg" width="200px" height="200px" alt="libro"></a>
 			</section>
+			<article id="galeria">
+				<ul id="galeria-oculta">
+						<li class="fraccion-galeria" id="foto-1">
+								<a href="#" class="primer-ultima-flecha"><img src="imagenes/proyec1.jpg" width="50px" height="50px" alt="Anterior"></a>
+								<img class="close" src="imagenes/proyec2.jpg" alt="Cerrar" width="50px" height="50px">
+								<a href="#foto-2"><img src="imagenes/proyec3.jpg" width="50px" height="50px" alt="Siguiente"></a>
+						</li>
+						<li class="fraccion-galeria" id="foto-2">
+							<a href="#foto-1"><img src="imagenes/foto2b.jpg" width="50px" height="50px" alt="Anterior"></a>
+								<img class="close" src="imagenes/foto2c.jpg" alt="Cerrar" width="50px" height="50px">
+								<a href="#foto-3"><img src="imagenes/foto2d.jpg" width="50px" height="50px" alt="Siguiente"></a>
+						</li>
+						<li class="fraccion-galeria" id="foto-3">
+								<a href="#foto-2"><img src="imagenes/foto3.jpg" width="50px" height="50px" alt="Anterior"></a>
+								<img class="close" src="imagenes/foto3a.jpg" alt="Cerrar" width="50px" height="50px">
+								<a href="#" class="primer-ultima-flecha"><img src="imagenes/foto3b.jpg" width="50px" height="50px" alt="Siguiente"></a>
+						</li>
+				</ul>
+           </article>
+		
+		<section class="contacto" id="contacto">
+			  <h2>Contactame</h2>
+			  <div class="formulario-contacto-contenedor">
+					<div class="formulario-contacto">
+					  <form action="https://formspree.io/f/xyylngw" method="POST"/>
+						<div class="control-formulario">
+						  <label for="name">Nombre</label>
+						  <input type="text" id="name" name="sender-name" placeholder="Escribe tu nombre" class="input-field" required/>
+						</div>
+				   </div>
+				   <div class="control-formulario">
+						  <label for="email">Correo Electrónico</label>
+						  <input type="email" id="email" name="sender-email" placeholder="Ingreso tu correo electrónico" class="input-field" required/>
+				   </div>
+				   <div class="control-formulario">
+					  <label for="mensaje">Mensaje</label><textarea id="mensaje" cols="60" rows="10" placeholder="Escribe tu mensaje" name="mensaje" class="input-field" required></textarea>
+				   </div>
+				   <div>
+				     <input type="submit" value="Enviar" id="submit-btn" class="submit-btn"/>
+				   </div>
+			</div>	
+		</section>
 	
-			<aside>
-				<article class="herramientas" id="herramientas">
-					<h3>Herramientas de trabajo</h3>
-						<ul>
-							<li>Iustrator</li>
-							<li>Photoshop</li>
-							<li>Indesign</li>
-							<li>Ligthroom</li>
-						</ul>
-				</article>
-			</aside>
-				
-						
-		</main>	
-	
-	<footer>
-		<p>Gracias por llegar hasta aqu&iacute;, te dejo mis redes para que puedas contactarme.</p>
-		<div class="redes-sociales">
-			<a href="https://www.instagram.com/gota_flora/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">
-				<img src="imagenes/instagram.png" width="45" height="45" alt="icono-instagram" id="foto-insagram">
-			</a>
-			<a href="https://www.behance.net/gallery/171148687/Mi-portfolio" target="_blank">
-				<img src="imagenes/behance.png" width="45" height="45" alt="icono-behance" id="foto-behance">
-			</a>
-		</div>
-	</footer>
-	
+	</main>		
+			<asided>
+				<div class="sociales">
+					<a href="https://www.instagram.com/gota_flora/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">
+					<img src="imagenes/instagram.png" width="45" height="45" alt="icono-instagram" id="foto-insagram">
+					</a>
+					<a href="https://www.behance.net/gallery/171148687/Mi-portfolio" target="_blank">
+					<img src="imagenes/behance.png" width="45" height="45" alt="icono-behance" id="foto-behance">
+					</a>
+	           </div>
+			</asided>
+		
+	   <footer>
+		  <p class="copy">&copy; Copyright 2023</p>
+		  <p class="copy">Dise&ntilde;ado; by<a href="https://www.instagram.com/flora.hermida/" target="_blank" >Florencia Hermida</a></p>
+	   </footer>
 </body>
 </html>
