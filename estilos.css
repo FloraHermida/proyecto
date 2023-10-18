@@ -24,6 +24,9 @@ body{
 	background-color:#F4FC8D;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
+
+/*header*/
+
 .navegacion{
 	background-color:black;
 	border-radius: 31px;
@@ -117,6 +120,9 @@ nav ul li {
 nav ul.show {
     transform: translateX(0);
   }
+
+/*sección flora*/
+
 .menu-flora {
   color: var navy;
   font-size: 2rem;
@@ -140,6 +146,7 @@ nav ul.show {
   width: 37.5rem;
   box-shadow: 1px 10px 25px rgba(0,0,0,0.5);
   overflow: inherit;
+  border-radius: 12%;
 }
 
 #hobbie{
@@ -176,6 +183,8 @@ nav ul.show {
   padding: 0.3rem 0;
 }
 
+
+
 /*info sobre mi*/
 
 .mas-sobre {
@@ -197,6 +206,30 @@ nav ul.show {
   line-height: inherit;
   padding: 0.4rem;
 }
+
+/*acerca de mi VINCULO*/
+.acerca-mi-experiencia {
+    margin-top: 5rem;
+	margin-left: 30px;
+    width: 20.5rem;
+  }
+.acerca-mi-experiencia{
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.acerca-mi-experiencia h1 {
+  margin-top: 10px;
+}
+
+.acerca-mi-experiencia p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+
+
 
 /*herramientas*/
 
@@ -229,19 +262,19 @@ nav ul.show {
 /*solapa de 3 fotos*/
 
 .proyectos {
-  	background-image: url(imagenes/fondo.jpg);
+    background-image: url(imagenes/fondo.jpg);
     background-repeat: repeat;
     background-size: 100%;
     margin-top: 5rem;
     padding-top: 10px;
     display: flex;
     justify-items: center;
-    flex-direction: row;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
 }
+
 .proyectos h2{
 	display: flex;
 	color: black;
@@ -262,7 +295,7 @@ nav ul.show {
 }
 .titulo-de-proyectos {
   display: block;
- justify-content: center;
+  justify-content: center;
   margin-bottom: 1rem;
 }
 .contenedor-de-proyectos h3{
@@ -281,9 +314,10 @@ nav ul.show {
   margin: 3rem;
 }
 .project-pic{
-	width: 590px;
-    height: 400px;
+	width: 500px;
+    height: 350px;
 	display: inline-flex;
+	flex-wrap: wrap;
 	align-content: center;
 	align-items: center;
 	margin: 10px;
