@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Flora Hermida</title>
+		<link rel="icon" type="image/png" href="imagenes/cursor.png">
 		<link href="estilos.css" rel="stylesheet" type="text/css">
 		<style>
 		  @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Source+Code+Pro:wght@500&display=swap');
@@ -27,7 +28,7 @@
 		
 	<main>
 	
-		<section class="flora" id="about">
+		<section class="flora">
 			  <img src="imagenes/fotoperfil.jpg" alt="flora-hermida" loading="lazy" class="flora-img">
 				  <div class="bio">
 					<h2 class="bio-titulo">Sobre M&iacute;</h2>
@@ -41,12 +42,12 @@
 					   <img src="imagenes/camara.png" alt="icono-camara" class="mishobbies" width="42px" heigth="30px">
 					   <img src="imagenes/gym.png" alt="icono-gym" class="mishobbies" width="40px" height="50px">
 					</div>
-					<section class="mas-sobre">
+					<article class="mas-sobre">
 						  <h3>Más sobre mí</h3>
 						  <p> +54 9 1158749019 </p>
 						  <p>09 de mayo del a&ntilde;o 2.000.</p>
 						  <p>@florenciahermida@gmail.com</p>
-					</section>
+					</article>
 				 </div>
 		 </section>
 
@@ -56,12 +57,11 @@
 		    <h2 class="header-habilidadr">Herramientas de trabajo&nbsp;</h2>
 
 		    <div class="contenedor-habilidades">
-			  <div class="lashabilidades">
 				  <img src="imagenes/photoshop.png" alt="img-photoshop" loading="lazy" class="icon icon-card" width="60px"  height="60px">
 				  <img src="imagenes/ilustrator.png" alt="img-ilustrator" loading="lazy" class="tarjeta-icono" width="60px" height="60px">
 				  <img src="imagenes/indesign.png" alt="img-indesign" loading="lazy" class="tarjeta-icono" width="60px" height="60px">
-			  </div>
-		    </div>	
+			</div>
+		   	
 	  </section>
 		
 	  <section class="proyectos" id="proyectos">
@@ -105,30 +105,20 @@
 		  </div>
        </section>
 		
-		<section id="miniaturas">
-			<a href="#foto-1"><img src="imagenes/img7.jpg" width="200px" height="200px" alt="ballena"></a>
-			<a href="#foto-2"><img src="imagenes/foto2.jpg" width="200px" height="200px" alt="yumi"></a>
-			<a href="#foto-3"><img src="imagenes/libro1.jpg" width="200px" height="200px" alt="libro"></a>
-			</section>
+		<section class="foto-trabajo" id="foto-trabajo">
+			<h2>Mis trabajos</h2>
 			<article id="galeria">
-				<ul id="galeria-oculta">
-						<li class="fraccion-galeria" id="foto-1">
-								<a href="#" class="primer-ultima-flecha"><img src="imagenes/proyec1.jpg" width="50px" height="50px" alt="Anterior"></a>
-								<img class="close" src="imagenes/proyec2.jpg" alt="Cerrar" width="50px" height="50px">
-								<a href="#foto-2"><img src="imagenes/proyec3.jpg" width="50px" height="50px" alt="Siguiente"></a>
-						</li>
-						<li class="fraccion-galeria" id="foto-2">
-							<a href="#foto-1"><img src="imagenes/foto2b.jpg" width="50px" height="50px" alt="Anterior"></a>
-								<img class="close" src="imagenes/foto2c.jpg" alt="Cerrar" width="50px" height="50px">
-								<a href="#foto-3"><img src="imagenes/foto2d.jpg" width="50px" height="50px" alt="Siguiente"></a>
-						</li>
-						<li class="fraccion-galeria" id="foto-3">
-								<a href="#foto-2"><img src="imagenes/foto3.jpg" width="50px" height="50px" alt="Anterior"></a>
-								<img class="close" src="imagenes/foto3a.jpg" alt="Cerrar" width="50px" height="50px">
-								<a href="#" class="primer-ultima-flecha"><img src="imagenes/foto3b.jpg" width="50px" height="50px" alt="Siguiente"></a>
-						</li>
-				</ul>
+				<div id="galeria-1">
+					<img class="galeria-img" src="imagenes/img8.jpg" width="50px" height="500px" alt="trabajo-libro">
+				</div>
+				<div id="galeria-2">
+					<img class="galeria-img" src="imagenes/img7.jpg" width="50px" height="50px" alt="trabajo-libro">
+				</div>
+				<div id="galeria-3">
+					<img class="galeria-img" src="imagenes/libro1.jpg" width="50px" height="50px" alt="trabajo-libro">
+				</div>
            </article>
+		</section>	
 		
 		<section class="contacto" id="contacto">
 			  <h2>Contactame</h2>
@@ -149,8 +139,8 @@
 				   </div>
 				   <div>
 				     <input type="submit" value="Enviar" id="submit-btn" class="submit-btn"/>
-				   </div>
-			</div>	
+			 	   </div>
+			 </div>	
 		</section>
 	
 	</main>		
