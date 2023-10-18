@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 } 
 *{
-	cursor: url("imagenes/cursor.png"), auto;
+	cursor: url("imagenes/flora.svg"), auto;
 }
 
 * {
@@ -16,10 +16,12 @@
   box-sizing: border-box;
 }
 
+/*etiquetas interior*/
+
 body{
-	width: 100%;
+	max-width: 100%;
 	height: 100vh;
-	background-color:#C5C4C4;
+	background-color:#F4FC8D;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 .navegacion{
@@ -71,6 +73,7 @@ a:hover {
 
 nav {
     padding: 1.5rem 1rem;
+	background-color: yellow;
   }
 nav {
   position: sticky;
@@ -81,7 +84,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: var #fcfcfc;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 nav h1 {
@@ -100,7 +102,7 @@ nav a:hover {
   color: white;
   border-radius: 8px;
   border-bottom: #848484px solid;
-  background-color: grey;
+  background-color:#FCF29E;
 }
 
 nav ul {
@@ -131,6 +133,7 @@ nav ul.show {
   max-width: 68.75rem;
   margin: auto;
   padding-top: 90px;
+  background-color: #F4FC8D;
 }
 .flora-img {
   height: 37.5rem;
@@ -148,8 +151,6 @@ nav ul.show {
     align-content: space-between;
     align-items: center;
 }
-
-
 
 .tiempolibre{
 	display: flex;
@@ -174,6 +175,9 @@ nav ul.show {
   line-height: var(--line-height);
   padding: 0.3rem 0;
 }
+
+/*info sobre mi*/
+
 .mas-sobre {
     display: inline-flex;
     margin: 0px;
@@ -193,6 +197,9 @@ nav ul.show {
   line-height: inherit;
   padding: 0.4rem;
 }
+
+/*herramientas*/
+
 .header-habilidades{
 	padding: 25px;
 	display: block;
@@ -218,6 +225,8 @@ nav ul.show {
   width: 11.875rem;
   height: 11.25rem;
 }
+
+/*solapa de 3 fotos*/
 
 .proyectos {
   	background-image: url(imagenes/fondo.jpg);
@@ -303,30 +312,42 @@ nav ul.show {
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: flex-start;
-	width: 1400px;
+	width: 1600px;
 	height: 400px;
 	overflow: hidden;
 	box-shadow: 1px 10px 25px rgba(0,0,0,0.5);
 	background-image: url("imagenes/fondo.jpg");
 }
 #galeria img{
-	width: 400px;
+	width: 380px;
 	height: 400px;
-	transition: 3s;
+	transition: 2s;
 }
 #galeria img:hover{
-	transform: translateX(-30%);
+	transform: translateX(-20%);
 	filter: brightness(58%);
 }
    
 
 /*contacto*/
-
+.control-formulario{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
 .contacto {
     margin-top: 6rem;
     display: flex;
     align-content: stretch;
     justify-content: space-evenly;
+}
+.formulario-contacto-contenedor{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 .contenedor-formulario-contacto label {
   line-height: 2.7em;
@@ -377,14 +398,16 @@ nav ul.show {
   transition: var(--transition);
 }
 .submit-btn:hover {
-  background-color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  background-color: orange;
+  border: 2px solid #FFC031;
   cursor: pointer;
 }
 
 /*aside*/
 
 .sociales {
+  width: 3rem;
+  height: 3rem;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -392,10 +415,6 @@ nav ul.show {
   bottom: 50%;
 }
 
-.socicon {
-  width: 2rem;
-  height: 2rem;
-}
 
 /*footer*/
 
