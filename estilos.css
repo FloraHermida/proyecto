@@ -19,7 +19,7 @@
 body{
 	width: 100%;
 	height: 100vh;
-	background-color: rgba(227,227,227,1.00);
+	background-color:#C5C4C4;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 .navegacion{
@@ -132,6 +132,13 @@ nav ul.show {
   margin: auto;
   padding-top: 90px;
 }
+.flora-img {
+  height: 37.5rem;
+  width: 37.5rem;
+  box-shadow: 1px 10px 25px rgba(0,0,0,0.5);
+  overflow: inherit;
+}
+
 #hobbie{
 	padding-top: 5px;
     margin: 0px;
@@ -142,10 +149,7 @@ nav ul.show {
     align-items: center;
 }
 
-.flora-img {
-  height: 37.5rem;
-  width: 37.5rem;
-}
+
 
 .tiempolibre{
 	display: flex;
@@ -189,15 +193,17 @@ nav ul.show {
   line-height: inherit;
   padding: 0.4rem;
 }
-.header-habilidadr{
+.header-habilidades{
 	padding: 25px;
+	display: block;
 }
 .habilidades {
-  max-width: 68.75rem;
-  margin: auto;
-  text-align: center;
-  margin-top: 2.5rem;
-  justify-content: space-between;
+    display: inline-flex;
+    margin-top: 30px;
+    padding: 2px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .encabezado-habilidad {
@@ -266,40 +272,53 @@ nav ul.show {
   margin: 3rem;
 }
 .project-pic{
+	width: 590px;
+    height: 400px;
 	display: inline-flex;
 	align-content: center;
 	align-items: center;
-	margin: 20px;
-	padding: 20px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 2%;
+	box-shadow: 1px 10px 25px rgba(0,0,0,0.5);
+	cursor: pointer;
 }
+
+
+/*galeria de fotos*/
 
 .foto-trabajo{
 	margin-left: 3%;
     margin-bottom: 10%;
     margin-right: 10%;
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    justify-content: space-around;
 }
-.foto-trabajo{
+
+#galeria{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-    align-content: flex-start;
+	align-content: flex-start;
+	width: 1400px;
+	height: 400px;
+	overflow: hidden;
+	box-shadow: 1px 10px 25px rgba(0,0,0,0.5);
+	background-image: url("imagenes/fondo.jpg");
 }
-#galeria{
-	display: flex;
-	align-items: baseline;
+#galeria img{
+	width: 400px;
+	height: 400px;
+	transition: 3s;
 }
-.galeria-img{
-    width: 60%;
-    height: 60%;
-    object-fit: cover;
-    transition: transform 400ms ease-out;
-    margin-left: 6%;
-    margin-top: 5%;
-	border-radius: 10%;
-    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-    overflow-clip-margin: content-box;
-    overflow: clip;
+#galeria img:hover{
+	transform: translateX(-30%);
+	filter: brightness(58%);
 }
+   
 
 /*contacto*/
 
