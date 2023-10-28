@@ -26,6 +26,14 @@ body{
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
+@media screen and (max-width: 600px) {
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+}
+}
+
 header {
 	position: sticky;
 	top: 0;
@@ -40,7 +48,6 @@ html {
 
 
 /*header*/
-
 .presentacion{
 	max-width: 100%;
 	margin-top: 100px;
@@ -544,6 +551,7 @@ nav ul.show {
     align-items: center;
 	
 }
+
 .contacto-titulos img{
    width: 500px;
    height: 800px;
@@ -609,6 +617,61 @@ nav ul.show {
   cursor: pointer;
 }
 
+/*video*/
+
+.video{
+	display: flex;
+	margin-top: 60px;
+	padding: 10px 12% 10px 10%;
+	align-items: center;
+	gap: 80px;
+	align-self: stretch;
+	background-image: url("imagenes/fondo.jpg")
+
+}
+
+.contenido-video{
+	display: flex;
+	padding: 25px 25px ;
+	align-items: flex-start;
+	gap: 30px;
+}
+
+.contenido-video video{
+	width: 500px;
+	height: 500px;
+	border-radius: 10px;
+	border: 2px;
+}
+
+.contenido-info {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 20px 20px 20px;
+	gap: 30px 10px;
+	background-color: orange;
+	border-radius: 20px;
+	
+}
+.contenido-info h4{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: white;
+	font-size: 30px;
+	
+}
+
+.contenido-info p{
+	display: flex;
+	padding-right: 3px;
+	align-items: flex-start;
+	gap: 10px;
+	color: white;
+}
+
+
+
 /*aside*/
 
 .sociales {
@@ -631,31 +694,10 @@ footer {
   margin: 2rem 0 0;
 }
 
-
-	
-
 @media screen and (max-width: 600px) {
-	.header{
-	 max-width: 100%;
-	}
-   .presentacion img{
-	 width: 18.3rem;
-	}
-	
-  .flora-img img {
-    height: 37.5rem;
-    width: 23rem;
-  }
-
-  .bio {
-    width: 18.3rem;
-  }
-
-  .contenedor-proyecto {
-    width: 17.875rem;
-  }
-
-  .contenedor-formulario-de-contacto{
-    max-width: 17.75rem;
-  }
- }
+.contacto {
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+}
+}
