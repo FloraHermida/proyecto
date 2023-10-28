@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
 * {
 	padding: 0px;
 	margin: 0px;
@@ -42,6 +43,7 @@ html {
 
 .presentacion{
 	max-width: 100%;
+	margin-top: 100px;
 }
 
 .boton1 {
@@ -50,18 +52,21 @@ html {
     justify-content: center;
     align-items: flex-start;
 }
+.cont-boton2{
+	display: flex;
+    justify-content: flex-start;
+    margin-left: 300px;
+    margin-top: -400px;
+}
 .boton2{
 	display: flex;
 	flex-direction: column;
     width: 401px;
     height: 80px;
     padding: 10px;
-	margin-left: 350px;
-	margin-top: -300px;
     justify-content: center;
     align-items: center;
     background: #276fb7;
-    border: 1.5px solidblack;
     border-radius: 20px;
     list-style: none;
     font-size: 35px;
@@ -115,6 +120,7 @@ a:hover {
 nav {
     padding: 1.5rem 1rem;
 	background-color: yellow;
+	max-width: 100%
   }
 nav {
   position: sticky;
@@ -144,7 +150,7 @@ nav a:hover {
   color: white;
   border-radius: 20px;
   border-bottom: #848484px solid;
-  background-color:#FCF29E;
+  background-color:grey;
 }
 
 nav ul {
@@ -157,7 +163,7 @@ nav ul li {
   font-weight: var;
 }
 nav ul.show {
-    transform: translateX(0);
+  transform: translateX(0);
   }
 
 /*main*/
@@ -246,27 +252,22 @@ nav ul.show {
 
 /*acerca de mi VINCULO*/
 
-.acerca-mi-experiencia {
-    margin-top: 5rem;
-	margin-left: 30px;
-    width: 20.5rem;
-  }
-.acerca-mi-experiencia{
-  width: 25rem;
-  padding: 0.625rem;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+.miexperiencia{
+    width: 90rem;
+    padding: 2.3rem;
+    display: flex;
+	justify-content: space-evenly;
 }
-
-.acerca-mi-experiencia h1 {
-  margin-top: 10px;
+.acerca-mi h2 {
+    margin: 20px;
+	display: flex;
+	align-items: flex-start;
 }
-
-.acerca-mi-experiencia p {
-  line-height: var(--line-height);
-  padding: 0.3rem 0;
+.acerca-texto {
+	width: 40rem;
+    padding: 1.1rem;
+	
 }
-
 
 
 /*herramientas*/
@@ -384,22 +385,23 @@ nav ul.show {
 }
 .foto-trabajo h2{
 	color: black;
-	margin-left: 15px;
+	margin: 20px 40px;
 }
 #galeria{
 	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
-	align-content: flex-start;
-	width: 1600px;
-	height: 400px;
+	align-items: center;
+	width: 1900px;
+	height: 700px;
 	overflow: hidden;
 	box-shadow: 1px 10px 25px rgba(0,0,0,0.5);
 	background-image: url("imagenes/fondo.jpg");
 }
 #galeria img{
-	width: 380px;
-	height: 400px;
+	display: flex;
+	align-items: center;
+	width: 580px;
+	height: 600px;
 	transition: 2s;
 }
 #galeria img:hover{
@@ -407,29 +409,136 @@ nav ul.show {
 	filter: brightness(58%);
 }
 
-
-/*vinculo sobre mi*/
-.acerca-mi-experiencia {
+.galeria-1vinculo{
+	display: flex;
+    justify-content: space-evenly;
+}
+.fototigre {
+	width: 500px;
+	height: 600px;
+	padding-bottom: 100px;
+	margin-top: 80px;
+	box-shadow: 1px 8px 10px rgba(0,0,0,0.5);
+}
+.biotigre {
+    width: 20.5rem;
+	margin-top: 100px;
+  }
+.biotigre {
   width: 25rem;
   padding: 0.625rem;
   border-radius: 6px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
-.acerca-mi-experiencia h1 {
+.biotigre h1 {
   margin-top: 10px;
 }
 
-.acerca-mi-experiencia p {
+.biotigre p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+  font-size: 25px;
+}
+
+.galeria-2vinculo{
+	display: flex;
+    justify-content: space-evenly;
+}
+.fotolibro {
+	width: 500px;
+	height: 600px;
+	padding-bottom: 100px;
+	margin-top: 80px;
+	box-shadow: 1px 8px 10px rgba(0,0,0,0.5);
+}
+.biolibro {
+    width: 20.5rem;
+	margin-top: 100px;
+  }
+.biolibro {
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+}
+
+.biolibro h1 {
+  margin-top: 10px;
+}
+
+.biolibro p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+  font-size: 25px;
+}
+
+.galeria-3vinculo{
+	display: flex;
+    justify-content: space-evenly;
+}
+.fotocollege{
+	width: 500px;
+	height: 600px;
+	padding-bottom: 100px;
+	margin-top: 80px;
+	box-shadow: 1px 8px 10px rgba(0,0,0,0.5);
+}
+.biocollege {
+    width: 20.5rem;
+	margin-top: 100px;
+  }
+.biocollege {
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+}
+
+.biocollege h1 {
+  margin-top: 10px;
+}
+
+.biocollege p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+  font-size: 25px;
+}
+
+.galeria-4vinculo{
+	display: flex;
+    justify-content: space-evenly;
+}
+.fotocuento{
+	width: 500px;
+	height: 600px;
+	padding-bottom: 100px;
+	margin-top: 80px;
+	box-shadow: 1px 8px 10px rgba(0,0,0,0.5);
+}
+.biocuento {
+    width: 20.5rem;
+	margin-top: 100px;
+  }
+.biocuento {
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+}
+
+.biocuento h1 {
+  margin-top: 10px;
+}
+
+.biocuento p {
   line-height: var(--line-height);
   padding: 0.3rem 0;
   font-size: 25px;
 }
 
 
+
 /*contacto padre*/
 .contacto {
-    margin-top: 4rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -521,3 +630,32 @@ footer {
   text-align: center;
   margin: 2rem 0 0;
 }
+
+
+	
+
+@media screen and (max-width: 600px) {
+	.header{
+	 max-width: 100%;
+	}
+   .presentacion img{
+	 width: 18.3rem;
+	}
+	
+  .flora-img img {
+    height: 37.5rem;
+    width: 23rem;
+  }
+
+  .bio {
+    width: 18.3rem;
+  }
+
+  .contenedor-proyecto {
+    width: 17.875rem;
+  }
+
+  .contenedor-formulario-de-contacto{
+    max-width: 17.75rem;
+  }
+ }
